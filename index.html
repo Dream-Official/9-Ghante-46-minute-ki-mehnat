@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream OLX</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="header-left">
+            <div class="logo">
+                <svg height="25" viewBox="0 0 36.289 20.768" alt="Logo" class="olx">
+                    <path
+                        d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z">
+                    </path>
+                </svg>
+            </div>
+            <div class="top-links">
+                <a href="https://www.olx.com.pk/motors/"><img src="car.jpg" height="45px" width="80px" alt="OLX Motors">
+                    <span><b>Motors</b></span></a>
+                <a href="https://www.olx.com.pk/properties/" target="_blank"><img src="house.jpg" height="50px" width="70px" alt="OLX Property">
+                    <span><b>Property</b></span></a>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="#" class="login-link">Login</a>
+            <button class="sell-btn"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="plus-icon">
+                        <path fill-rule="evenodd"
+                            d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                            clip-rule="evenodd" />
+                    </svg></span> SELL</button>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <div class="location-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="location">
+                    <path fill-rule="evenodd"
+                        d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <select>
+                    <option>Pakistan</option>
+                    <option>Afghanistan</option>
+                    <option>Argentina</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Bangladesh</option>
+                    <option>Belgium</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>Colombia</option>
+                    <option>Denmark</option>
+                    <option>Egypt</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Greece</option>
+                    <option>India</option>
+                    <option>Indonesia</option>
+                    <option>Iran</option>
+                    <option>Iraq</option>
+                    <option>Ireland</option>
+                    <option>Italy</option>
+                    <option>Japan</option>
+                    <option>Malaysia</option>
+                    <option>Mexico</option>
+                    <option>Morocco</option>
+                    <option>Netherlands</option>
+                    <option>New Zealand</option>
+                    <option>Nigeria</option>
+                    <option>Norway</option>
+                    <option>Pakistan</option>
+                    <option>Palestine</option>
+                    <option>Philippines</option>
+                    <option>Poland</option>
+                    <option>Portugal</option>
+                    <option>Qatar</option>
+                    <option>Russia</option>
+                    <option>Saudi Arabia</option>
+                    <option>Singapore</option>
+                    <option>South Africa</option>
+                    <option>South Korea</option>
+                    <option>Spain</option>
+                    <option>Sri Lanka</option>
+                    <option>Sweden</option>
+                    <option>Switzerland</option>
+                    <option>Turkey</option>
+                    <option>Ukraine</option>
+                    <option>United Arab Emirates</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Vietnam</option>
+                </select>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Find Cars, Mobile Phones and more...">
+                <button class="search-btn"><i class="fa fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Navigation -->
+    <nav class="categories-nav">
+        <div class="all-categories">
+            <strong>All Categories <img src="drop-down.jpg" class="chevron-down" alt="">
+</strong>
+        </div>
+        <ul class="category-links">
+            <li><a href="#">Mobile Phones</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Motorcycles</a></li>
+            <li><a href="#">Houses</a></li>
+            <li><a href="#">Video-Audios</a></li>
+            <li><a href="#">Tablets</a></li>
+            <li><a href="#">Land & Plots</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div class="banner">
+            <!-- Banner Placeholder content -->
+            <div class="banner-content">
+                <h2><a href="https://youtu.be/BGSmRmIv5ws?si=jyfrUaoYxLEwE4jK" target="_blank">Ranjheya Ve</a></h2>
+                <p>Dream Offcial | Zain Zohaib | M.Gulzar Sabri Sahab</p>
+                <button class="play-btn"><i class="fa fa-play-circle"></i> <a href="https://youtu.be/BGSmRmIv5ws?si=jyfrUaoYxLEwE4jK" target="_blank">PLAY THIS SONG</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Categories Grid -->
+    <main class="main-categories">
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWAFIqvVDf6yC5P9S1FVCXjntRLFbf7LNqdVkNy4oFg&s" alt="" height="100px" width="80px"></div>
+            <span>Mobiles</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfzpzEd5LK_bUqqmh3syEuA383c6-Fu4sV51zqUb_HBA&s=10" alt="" height="80px" width="100px"></div>
+            <span>Vehicles</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3PGUDsPwpT4oF7NX2oWUFiGOfr_N5A0vr79oeY_dm7A&s=10" alt="" height="80px" width="100px"></div>
+            <span>Property<br>For Sale</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvVQj9wKwp8iwMiZBOVQa-PufXA5kJdoc3tim94QBj_w&s=10" height="80px" width="100px" alt=""></div>
+            <span>Property<br>For Rent</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkArFypbSeovLZq5sRavtuCPWQj4HzsyCBr6yuf9dw6Q&s=10" height="100px" width="100px" alt=""></div>
+            <span>Electronics<br>& Home...</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="data:image/jpeg;base64,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" alt="" height="80px" width="100px"></div>
+            <span>Bikes</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTbgjol9H8up1sC0DKuBA_47adfZpT1t7T1KzlyRl3Q&s=10" alt="" height="100px" width="90"></div>
+            <span>Business,<br>Industrial &...</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFxZK6GQbINhvTrNl6TljitEF17TQXaW7l073aGREDbQ&s=10" height="100" width="90" alt=""></div>
+            <span>Services</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtgSOOXJZxuNgAaVMF8NOqUiKC2OOvM_A2sgxXCarZQ&s=10" height="80" width="110" alt=""></div>
+            <span>Jobs</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqmWyqrRqKxQcwsV7FLhldxwae6jJlb3DunBQ9xT7jEA&s=10" height="80" width="110" alt=""></div>
+            <span>Animals</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://www.olx.com.pk/assets/furniture-home-decor.47a1998de5f4a8a9e84702dcb40bb313.png" height="100" width="100" alt=""></div>
+            <span>Funiture,<br>& Home Decr.</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://www.olx.com.pk/assets/fashion-beauty.6ef7c1f060c92b55a6b28bfcfb16a1d2.png" height="100" width="100" alt=""></div>
+            <span>Fashion, <br>& Beauty</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://www.olx.com.pk/assets/books-sports-hobbies.9406daf905b451fa283048652f414054.png" height="100" width="100" alt=""></div>
+            <span>Books, Sports <br>& Hobbies</span>
+        </div>
+        <div class="category-item">
+            <div class="icon-circle"><img src="https://www.olx.com.pk/assets/kids.5de42a58bc91f81fa22ccc401d7ac285.png" height="100" width="100" alt=""></div>
+            <span>Kids</span>
+        </div>
+    </main>
+
+  <div class="container">
+    <h2 class="Card-Heading">Mobile Phones</h2>
+    <br>
+    <div class="card-grid">
+
+      <!-- Card 1: Phone Example -->
+     <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4iTR5HsC4m368nYAR1-su4GyJXa3uVV7KkhtJEq8SQ&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4iTR5HsC4m368nYAR1-su4GyJXa3uVV7KkhtJEq8SQ&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4iTR5HsC4m368nYAR1-su4GyJXa3uVV7KkhtJEq8SQ&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4iTR5HsC4m368nYAR1-su4GyJXa3uVV7KkhtJEq8SQ&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+      <!-- Card 2: Phone Example -->
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGUWFBhNv_lxxzZE9_saxLhzhG9rB9vwbtdwWzcAHkw&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGUWFBhNv_lxxzZE9_saxLhzhG9rB9vwbtdwWzcAHkw&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGUWFBhNv_lxxzZE9_saxLhzhG9rB9vwbtdwWzcAHkw&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGUWFBhNv_lxxzZE9_saxLhzhG9rB9vwbtdwWzcAHkw&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 4.59 Lac</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Apple Iphone 18 pro max 256gb Non active box pack</h3>
+          <p class="card-location">Johar Town Phase 1, Lahore</p>
+          <p class="card-time">1 week ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="Card-Heading">Cars</h2>
+    <br>
+    <div class="card-grid">
+      <!-- Card 3: Car Example (With Specs) -->
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjAAHAJSk0SzQV7hOJm8QGLYVu11PxiSbkSLTkuckbQ&s" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 24.85 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla XLi 2012</h3>
+          <p class="card-specs">2012 • 250,000 km • Petrol</p>
+          <p class="card-location">DHA Phase 8, Lahore</p>
+          <p class="card-time">2 days ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjAAHAJSk0SzQV7hOJm8QGLYVu11PxiSbkSLTkuckbQ&s" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 24.85 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla XLi 2012</h3>
+          <p class="card-specs">2012 • 250,000 km • Petrol</p>
+          <p class="card-location">DHA Phase 8, Lahore</p>
+          <p class="card-time">2 days ago</p>
+        </div>
+      </div>
+        <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjAAHAJSk0SzQV7hOJm8QGLYVu11PxiSbkSLTkuckbQ&s" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 24.85 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla XLi 2012</h3>
+          <p class="card-specs">2012 • 250,000 km • Petrol</p>
+          <p class="card-location">DHA Phase 8, Lahore</p>
+          <p class="card-time">2 days ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjAAHAJSk0SzQV7hOJm8QGLYVu11PxiSbkSLTkuckbQ&s" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 24.85 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla XLi 2012</h3>
+          <p class="card-specs">2012 • 250,000 km • Petrol</p>
+          <p class="card-location">DHA Phase 8, Lahore</p>
+          <p class="card-time">2 days ago</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Car Example -->
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Ki6JLIsHrwO2JiCIvTAVu285OcB04KlmcUhK0BSHNA&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 57.95 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla Altis Special edition 2022</h3>
+          <p class="card-specs">2022 • 71,000 km • Petrol</p>
+          <p class="card-location">Gulberg, Lahore</p>
+          <p class="card-time">4 days ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Ki6JLIsHrwO2JiCIvTAVu285OcB04KlmcUhK0BSHNA&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 57.95 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla Altis Special edition 2022</h3>
+          <p class="card-specs">2022 • 71,000 km • Petrol</p>
+          <p class="card-location">Gulberg, Lahore</p>
+          <p class="card-time">4 days ago</p>
+        </div>
+      </div>
+            <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Ki6JLIsHrwO2JiCIvTAVu285OcB04KlmcUhK0BSHNA&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 57.95 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla Altis Special edition 2022</h3>
+          <p class="card-specs">2022 • 71,000 km • Petrol</p>
+          <p class="card-location">Gulberg, Lahore</p>
+          <p class="card-time">4 days ago</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Ki6JLIsHrwO2JiCIvTAVu285OcB04KlmcUhK0BSHNA&s=10" alt="Product Image">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="price">Rs 57.95 Lacs</span>
+            <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <h3 class="card-title">Toyota Corolla Altis Special edition 2022</h3>
+          <p class="card-specs">2022 • 71,000 km • Petrol</p>
+          <p class="card-location">Gulberg, Lahore</p>
+          <p class="card-time">4 days ago</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
